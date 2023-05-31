@@ -6,4 +6,78 @@
     android:layout_height="match_parent"
     tools:context=".OTPScreen">
 
+    <TextView
+        android:id="@+id/textViewPhoneOtp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="6dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:hint="+91 9999999999"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewPencil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewPencil"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="191dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewPhoneOtp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pencil" />
+
+    <TextView
+        android:id="@+id/textViewOtp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="218dp"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="Enter the OTP"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPhoneOtp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextOtp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="206dp"
+        android:background="@drawable/edit_text"
+        android:ems="10"
+        android:fontFamily="@font/poppins_bold"
+        android:hint="9999"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        android:textColorHint="#808080"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOtp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonOtpContinue"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="240dp"
+        android:background="@drawable/button"
+        android:backgroundTint="#F8CA10"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Continue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextOtp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
